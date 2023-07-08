@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 1 sept. 2019 08:10:58 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="zouzou.bean.Sortie" table="SORTIE">
+        <id name="numBonSortie" type="java.lang.String">
+            <column name="NUMBONSORTIE" />
+            <generator class="assigned" />
+        </id>
+        <property name="numProduit" type="java.lang.String">
+            <column name="NUMPRODUIT" />
+        </property>
+        <property name="qteSortie" type="int">
+            <column name="QTESORTIE" />
+        </property>
+        <property name="dateSortie" type="java.util.Date">
+            <column name="DATESORTIE" />
+        </property>
+    </class>
+</hibernate-mapping>
